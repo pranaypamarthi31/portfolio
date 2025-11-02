@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Pranay Pamarthi — Student Portfolio</title>
+  <meta name="description" content="Student portfolio showcasing projects, skills, achievements, and contact details." />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎓</text></svg>">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Skip link for keyboard/screen reader users -->
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="/">PP<span>·Portfolio</span></a>
+
+      <!-- Mobile nav toggle (CSS-only) -->
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">
+      <label for="nav-toggle" class="hamburger" aria-hidden="true">
+        <span></span><span></span><span></span>
+      </label>
+
+      <nav class="site-nav" aria-label="Primary">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#achievements">Achievements</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a class="btn btn-primary" href="Pranay_Resume_.pdf" download>Download CV</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <p class="eyebrow">Hello, I’m</p>
+          <h1>Sri Chakra Pranay Pamarthi</h1>
+          <p class="tagline">B.Tech CSE student • Python |SQL| Web Dev • Building real-world projects</p>
+          <div class="cta">
+            <a class="btn btn-primary" href="#projects">View Projects</a>
+            <a class="btn btn-ghost" href="#contact">Contact Me</a>
+          </div>
+        </div>
+        <figure class="hero-photo">
+          <img src="pranay.jpg" alt="Portrait of Pranay Pamarthi" />
+        </figure>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section">
+      <div class="container two-col">
+        <div>
+          <h2>About</h2>
+          <p>I’m a final-year B.Tech student passionate about building practical software—spanning Python and full-stack web apps. I enjoy turning ideas into clean, user-friendly experiences.</p>
+          <ul class="details">
+            <li><strong>College:</strong> NRI Institute of Technology</li>
+            <li><strong>CGPA:</strong> 6.5</li>
+            <li><strong>Interests:</strong> Data analysis, web apps, problem solving</li>
+          </ul>
+        </div>
+        <div class="stats">
+          <div class="stat">
+            <div class="stat-num">10+</div>
+            <div class="stat-label">Mini Projects</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">3</div>
+            <div class="stat-label">Internships</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">20+</div>
+            <div class="stat-label">Certifications</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section alt">
+      <div class="container">
+        <h2>Projects</h2>
+
+        <div class="grid cards">
+          <article class="card">
+            <img src="images/project1.jpg" alt="Face Recognition Attendance System interface" />
+            <div class="card-body">
+              <h3>Face-Recognition Attendance</h3>
+              <p>Automated attendance with real-time face detection and daily CSV reports. Built with Python (OpenCV) and SQLite.</p>
+              <div class="meta"><span>Python</span><span>OpenCV</span><span>SQLite</span></div>
+              <div class="actions">
+                <a class="btn btn-sm" href="#" aria-label="Open project demo">Demo</a>
+                <a class="btn btn-sm btn-ghost" href="#" aria-label="Open project source code">Code</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <img src="images/project2.jpg" alt="MERN shopping platform" />
+            <div class="card-body">
+              <h3>MERN Shopping Platform</h3>
+              <p>Full-stack e-commerce prototype with product search, cart, and JWT auth. Deployed on Render.</p>
+              <div class="meta"><span>MongoDB</span><span>Express</span><span>React</span><span>Node</span></div>
+              <div class="actions">
+                <a class="btn btn-sm" href="#">Demo</a>
+                <a class="btn btn-sm btn-ghost" href="#">Code</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <img src="images/project3.jpg" alt=" Data Analysis with Python dashboard" />
+            <div class="card-body">
+              <h3>Data Analysis with Python</h3>
+              <p>Explored sales data; built a clean dashboard and presented insights with Matplotlib and Pandas.</p>
+              <div class="meta"><span>Pandas</span><span>Matplotlib</span><span>Jupyter</span></div>
+              <div class="actions">
+                <a class="btn btn-sm" href="#">Report</a>
+                <a class="btn btn-sm btn-ghost" href="#">Notebook</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section">
+      <div class="container">
+        <h2>Skills</h2>
+        <ul class="skill-tags">
+          <li>Python</li><li>Java</li><li>C</li><li>HTML</li><li>CSS</li><li>JavaScript</li>
+          <li>Django</li><li>Bootstrap</li><li>Git</li><li>Google Colab</li><li>IBM Cloud</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Achievements / Education -->
+    <section id="achievements" class="section alt">
+      <div class="container two-col">
+        <div>
+          <h2>Achievements</h2>
+          <ul class="timeline">
+            <li><strong>2025</strong> — Completed “Data Analysis using Python” (May–July)</li>
+            <li><strong>2024</strong> — Led campus hackathon team to Top 5</li>
+            <li><strong>2023</strong> — Built first full-stack app in MERN</li>
+          </ul>
+        </div>
+        <div>
+          <h2>Education</h2>
+          <p><strong>B.Tech (CSE)</strong>, NRI Institute of Technology — CGPA 6.5</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+      <div class="container">
+        <h2>Contact</h2>
+        <form class="contact-form" action="https://formspree.io/f/your-id" method="POST">
+          <div class="form-row">
+            <label for="name">Name</label>
+            <input id="name" name="name" required autocomplete="name" />
+          </div>
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required autocomplete="email" />
+          </div>
+          <div class="form-row">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+          <button class="btn btn-primary" type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Sri Chakra Pranay Pamarthi</p>
+      <ul class="social">
+        <li><a href="#" aria-label="Open LinkedIn profile">LinkedIn</a></li>
+        <li><a href="#" aria-label="Open GitHub profile">GitHub</a></li>
+        <li><a href="mailto:you@example.com">Email</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <!-- Tiny enhancement: show current year without JS if you prefer; or set manually -->
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
